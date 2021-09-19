@@ -10,12 +10,14 @@
   },
   "dependencies": {
     "@chakra-ui/react": "^1.6.7",
+    "@fontsource/plus-jakarta-sans": "^4.5.0",
     "@prisma/client": "^2.30.3",
     "next": "11.1.2",
     "next-auth": "^3.29.0",
     "react": "17.0.2",
     "react-dom": "17.0.2",
-    "react-hook-form": "^7.15.4"
+    "react-hook-form": "^7.15.4",
+    "swr": "^1.0.1"
   },
   "devDependencies": {
     "@types/react": "17.0.21",
