@@ -53,3 +53,23 @@ model VerificationToken {
 
   @@unique([identifier, token])
 }
+
+model Snippet {
+
+}
+
+model Answer {
+
+}
+
+model Question {
+
+}
+
+model Tag {
+
+}
+
+model Post {
+
+}
