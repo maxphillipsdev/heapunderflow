@@ -1,7 +1,6 @@
 import { Box, HStack, Stack } from "@chakra-ui/layout";
 import { StackDivider } from "@chakra-ui/react";
 import NavBar from "./NavBar";
-import NavBarContainer from "./NavBarContainer";
 import SideBar from "./SideBar";
 
 interface Props {}
