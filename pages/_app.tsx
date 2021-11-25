@@ -3,16 +3,20 @@ import type { AppProps } from "next/app";
 import theme from "../lib/theme";
 import "../styles/globals.css";
 
+import { SessionProvider } from "next-auth/react";
+
 import Shell from "../components/shell";
 
-function MyApp({ Component, pageProps }: AppProps) {
+function MyApp({ Component, pageProps: { session, ...pageProps } }: AppProps) {
   return (
     <>
-      <ChakraProvider theme={theme}>
-        <Shell>
-          <Component {...pageProps} />
-        </Shell>
-      </ChakraProvider>
+      <SessionProvider session={session}>
+        <ChakraProvider theme={theme}>
+          <Shell>
+            <Component {...pageProps} />
+          </Shell>
+        </ChakraProvider>
+      </SessionProvider>
     </>
   );
 }
